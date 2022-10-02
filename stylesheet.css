@@ -6,7 +6,7 @@ body {
     padding: 100px;
 }
 
-.mainContainer {
+.main-container {
     display: flex;
     border: 2px solid black;
     justify-content: space-around;
@@ -16,7 +16,7 @@ body {
     width: 1000px;
 }
 
-.grid-container {
+#grid-container {
     display: grid;
     grid-template-columns: repeat(16, 32px);
     grid-template-rows: repeat(16, 32px);
@@ -26,8 +26,8 @@ body {
 }
 
 .grid-item  {
-    background-color: black;
-    border: 1px solid #ffffff;
+    
+    border: 1px solid #ff0000;
 }
 
 #settings-container {
