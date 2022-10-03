@@ -3,8 +3,12 @@ const btn = document.getElementById('grid-btn')
 const DEFAULT_GRID_UNITS = 256;
 const DEFAULT_GRID_AREA = 512 * 512;
 
+btn.addEventListener('click', setGridSize);
 
+
+//user input number to create grid size. e.g 16x16 / num x num
 function createGridDivs(num) {
+        gridReset();
         const gridSize = num * num;
     for (let i = 0; i < gridSize; i++) {
         const div = document.createElement('div');
@@ -16,6 +20,12 @@ function createGridDivs(num) {
             console.log(e)
         }) 
     }
+}
+
+function gridReset() {
+    while (gridContainer.firstChild) {
+        gridContainer.removeChild(gridContainer.firstChild);
+      }
 }
 
 
@@ -35,20 +45,7 @@ function setGridSize() {
     gridContainer.style.gridTemplateRows = `repeat(${gridNum}, ${itemPixelSize}px)`;
 }
 
-btn.addEventListener('click', setGridSize);
 
-/* stuck here. Need to receive input from button click which will be the grid size
 
-const userGridUnits = () => {
-    btn.addEventListener('click', promptGridSize);
-
-function promptGridSize() {
-    let noOfSquares = prompt('Please specify the number of squares per side for the grid', '');
-    return noOfSquares;
-}
-
-console.log(userGridUnits)
-
-*/
 
 
