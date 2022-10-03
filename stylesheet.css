@@ -26,7 +26,6 @@ body {
 }
 
 .grid-item  {
-    
     border: 1px solid #ff0000;
 }
 
@@ -36,17 +35,19 @@ body {
     justify-content: space-around;
     border: 2px solid black;
     padding: 25px;
-    height: 450px;
-    width: 300px;
+    gap: 50px;
 
     
 }
 
-.placeholder {
+.settings {
     display: flex;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
+    border: solid black 1px;
     padding: 10px;
-    justify-content: center;
+    flex-flow: wrap column;
+    align-items: center;
     color: white;
     border-radius: 5px;
 }
+
