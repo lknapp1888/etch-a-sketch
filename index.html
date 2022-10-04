@@ -15,11 +15,20 @@
         
         <div class="main-container">
             <div id="settings-container">
-                <div class="settings grid-size-container">
+                <div class="settings color-container">
+                    <div id="color-select-label" style="color: black">Choose a color!</div>
+                    <input type="color" id="color-selector">   
+                </div>
+                <div class="settings color-container">
+                    <div id="border-color-select-label" style="color: black">Choose a border color!</div>
+                    <input type="color" id="border-color-selector">   
+                </div>
+                
+                <div class="settings color-select-container">
                     <div id="grid-range-number" style="color: black;">16x16</div>
                     <input type="range" min="1" max="92" value="16" class="slider" id="gridSize">    
                 </div>
-            <button class="btn" id="reset-btn">Reset grid</button>
+            <button class="btn" id="clear-grid-btn">Clear grid</button>
                 
             </div>
 
