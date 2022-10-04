@@ -16,11 +16,10 @@
         <div class="main-container">
             <div id="settings-container">
                 <div class="settings grid-size-container">
-                    <div id="grid-range-number" style="color: black;">0</div>
-                    <input type="range" name="gridSize" id="gridSize">
-                    <input type="submit" name="submitGridSize" id="submitGridSize">            
+                    <div id="grid-range-number" style="color: black;">16x16</div>
+                    <input type="range" min="1" max="92" value="16" class="slider" id="gridSize">    
                 </div>
-                <button id="grid-btn">Define grid Size</button>
+            <button class="btn" id="reset-btn">Reset grid</button>
                 
             </div>
 
